@@ -28,3 +28,4 @@
 
 # Hide secrets
 /config/secrets.yml
+/config/database.yml
