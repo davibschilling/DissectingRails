@@ -1,2 +1,6 @@
-<h1>Pages#home</h1>
+<h1>Ola, <%= current_user.name %>!</h1>
 <p>Find me in app/views/pages/home.html.erb</p>
+
+<% if session[:source] %>
+    <p>Obrigado por visitar o site pelo <%= session[:source] %>
+<% end %>
