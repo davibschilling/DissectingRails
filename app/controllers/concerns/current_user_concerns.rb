@@ -6,6 +6,14 @@ module CurrentUserConcerns
     end
 
     def guest_user
-        OpenStruct.new(name: "Visitante")
+        # Utilizado para gerar dados locais sem salvar no banco de dados
+        # OpenStruct.new(name: "Visitante")
+
+        guest = GuestUser.new
+        guest.name = "Guest User"
+        guest.first_name = "Guest"
+        guest.last_name = "User"
+        # guest.email = "guest@example.com"
+        guest
     end
 end
