@@ -1,5 +1,6 @@
 <%= form_with(model: blog, local: true) do |form| %>
   <% if blog.errors.any? %>
+
     <div id="error_explanation">
       <h2><%= pluralize(blog.errors.count, "error") %> prohibited this blog from being saved:</h2>
 
@@ -23,5 +24,29 @@
 
   <div class="actions">
     <%= form.submit %>
+  </div> 
+
+<% end %> 
+
+
+<%#= form_tag(blogs_path) do %>
+
+  <%
+=begin%>
+ <div class="form-group">
+    <%#= label 'blog[title]', 'blog title' %>
+    <%#= text_field 'blog[title]', blog.title, class: 'form-control' %>
   </div>
-<% end %>
+
+  <div class="form-group">
+    <%#= label 'blog[body]', 'blog body' %>
+    <%#= text_area 'blog[body]', blog.body, class: 'form-control', rows: 15 %>
+  </div>
+
+  <div class="form-group">
+    <%#= submit_tag 'save', class: 'btn btn-primary' %>
+  </div> 
+<%
+=end%>
+
+<%# end %>

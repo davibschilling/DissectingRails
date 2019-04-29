@@ -16,8 +16,22 @@ gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
 
+# A Ruby interface to the Twitter API.
+gem 'twitter', '~> 6.2'
+# This Ruby on Rails gem allows you to easily add Growl-like notifications to your application using a jQuery plugin called 'gritter'.
+gem 'gritter', '~> 1.2'
+# Unobtrusive nested forms handling, using jQuery. Use this and discover cocoon-heaven.
+gem 'cocoon', '~> 1.2', '>= 1.2.12'
+# Autoload dotenv in Rails.
+gem 'dotenv-rails', '~> 2.7', '>= 2.7.2'
+# Use aws-sdk for S3 support in CarrierWave
+gem 'carrierwave-aws', '~> 1.3'
+# Upload files in your Ruby applications, map them to a range of ORMs, store them on different backends.
+gem 'carrierwave', '~> 1.3', '>= 1.3.1'
+# Manipulate images with minimal use of memory via ImageMagick / GraphicsMagick
+gem 'mini_magick', '~> 4.9', '>= 4.9.3'
+# jQuery UI's JavaScript, CSS, and image files packaged for the Rails 3.1+ asset pipeline
 gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
-
 # Icons lib
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.5'
 # Pagination
