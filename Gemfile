@@ -86,3 +86,6 @@ gem 'devise', '~> 4.6', '>= 4.6.2'
 gem 'petergate', '~> 2.0', '>= 2.0.1'
 
 gem 'rubocop-performance'
+
+# A Ruby client that tries to match Redis' API one-to-one, while still providing an idiomatic interface.
+gem 'redis', '~> 4.1'
